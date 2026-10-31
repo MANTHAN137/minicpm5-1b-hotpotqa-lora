@@ -1,0 +1,82 @@
+{
+  "phase": "Complete",
+  "step": 2500,
+  "loss": "0.100",
+  "total_steps": 2500,
+  "examples": 5000,
+  "evaluation": 500,
+  "baseline": {
+    "count": 500,
+    "exact_match": 15.2,
+    "token_f1": 26.924976903405504,
+    "unparsed_answers": 51,
+    "by_type": {
+      "bridge": {
+        "count": 405,
+        "exact_match": 14.320987654320987,
+        "token_f1": 26.3363459071844
+      },
+      "comparison": {
+        "count": 95,
+        "exact_match": 18.94736842105263,
+        "token_f1": 29.434403782032188
+      }
+    },
+    "by_level": {
+      "hard": {
+        "count": 500,
+        "exact_match": 15.2,
+        "token_f1": 26.924976903405504
+      }
+    },
+    "model_id": "openbmb/MiniCPM5-1B",
+    "adapter": null,
+    "split": "hotpotqa/distractor/validation",
+    "generation": {
+      "temperature": 0.0,
+      "max_new_tokens": 96,
+      "batch_size": 8
+    },
+    "selection": "Seed 137 random sample of 500 from already completed baseline questions",
+    "candidate_count": 4385,
+    "scoring": "HotpotQA official answer EM/F1 rules"
+  },
+  "after": {
+    "count": 500,
+    "exact_match": 32.4,
+    "token_f1": 48.56693132961009,
+    "unparsed_answers": 36,
+    "by_type": {
+      "bridge": {
+        "count": 405,
+        "exact_match": 33.82716049382716,
+        "token_f1": 50.59451798379001
+      },
+      "comparison": {
+        "count": 95,
+        "exact_match": 26.31578947368421,
+        "token_f1": 39.923009277579915
+      }
+    },
+    "by_level": {
+      "hard": {
+        "count": 500,
+        "exact_match": 32.4,
+        "token_f1": 48.56693132961009
+      }
+    },
+    "model_id": "openbmb/MiniCPM5-1B",
+    "adapter": "LoRA",
+    "split": "hotpotqa/distractor/validation",
+    "prediction_file": "predictions_after.jsonl",
+    "wall_time_seconds": 374.33,
+    "generation": {
+      "temperature": 0.0,
+      "max_new_tokens": 96,
+      "batch_size": 8
+    }
+  },
+  "error": null,
+  "log_updated": "2026-11-01T01:08:06.236564+05:30",
+  "report_ready": true
+}

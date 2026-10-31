@@ -1,0 +1,41 @@
+{
+  "dataset": "hotpotqa/hotpot_qa",
+  "configuration": "distractor",
+  "training_examples": 5000,
+  "question_type_counts": {
+    "comparison": 1034,
+    "bridge": 3966
+  },
+  "difficulty_counts": {
+    "medium": 3127,
+    "easy": 1010,
+    "hard": 863
+  },
+  "domain_note": "Wikipedia evidence-context QA; no topic-specific benchmark labels or closed-book knowledge test.",
+  "samples": [
+    {
+      "id": "5adc1309554299438c868d3b",
+      "question": "Human Error\" is the season finale of the third season of a tv show that aired on what network?",
+      "answer": "Fox",
+      "type": "bridge",
+      "level": "medium",
+      "teaching_target": "Evidence: [Human Error (House)] \"Human Error\" is the twenty-fourth episode and season finale of the third season of \"House\" and the seventieth episode overall. [House (TV series)] House (also called House, M.D.) is an American television medical drama that originally ran on the Fox network for eight seasons, from November 16, 2004 to May 21, 2012.\nAnswer: Fox"
+    },
+    {
+      "id": "5a7e36045542991319bc9440",
+      "question": "Which tennis player won more Grand Slam titles, Henri Leconte or Jonathan Stark?",
+      "answer": "Jonathan Stark",
+      "type": "comparison",
+      "level": "medium",
+      "teaching_target": "Evidence excerpt: [Jonathan Stark (tennis)] Jonathan Stark (born April 3, 1971) is a former professional tennis player from the United States. [Jonathan Stark (tennis)]  During his career he won two Grand Slam doubles titles (the 1994 French Open Men's Doubles and the 1995 Wimbledon Championships Mixed Doubles). [Henri Leconte]  He reached the men's singles final…\nAnswer: Jonathan Stark"
+    },
+    {
+      "id": "5abe3f9455429976d4830aaa",
+      "question": "Which faith is designated to the University of Providence, private university accredited by the NW association of Schools and Colleges and located in a third largest city in Montana after being passed by Missoula? ",
+      "answer": "Roman Catholic",
+      "type": "bridge",
+      "level": "easy",
+      "teaching_target": "Evidence excerpt: [University of Providence] The University of Providence (UP) (renamed from University of Great Falls in July 2017), is a private Roman Catholic university located in Great Falls, Montana within the Diocese of Great Falls–Billings. [University of Providence]  The university is accredited by the Northwest Association of Schools and Colleges. [Great Falls, Montana] Great Falls is a city in and the county seat of Cascade County,…\nAnswer: Roman Catholic"
+    }
+  ]
+}

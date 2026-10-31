@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+.DS_Store
+*.safetensors
+mlx_data/
+benchmark_validation*.jsonl
+effective_training_data.jsonl

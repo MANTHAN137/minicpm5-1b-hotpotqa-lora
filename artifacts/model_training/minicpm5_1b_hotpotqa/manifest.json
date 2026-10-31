@@ -1,0 +1,31 @@
+{
+  "model_id": "openbmb/MiniCPM5-1B",
+  "model_parameters": 1080632832,
+  "model_license": "Apache-2.0",
+  "dataset_id": "hotpotqa/hotpot_qa",
+  "dataset_config": "distractor",
+  "dataset_license": "CC-BY-SA-4.0",
+  "dataset_source": "https://huggingface.co/datasets/hotpotqa/hotpot_qa",
+  "dataset_fingerprint": {
+    "train": "0afd210d3a41a506",
+    "validation": "6d38dc5e932fe842"
+  },
+  "train_count": 5000,
+  "validation_count": 500,
+  "train_ids_sha256": "578bc55f9338c333706ba0bed168b43caece9ce2b5b68e5eb11b1eb2263b73e0",
+  "seed": 137,
+  "max_train_prompt_tokens": 3710,
+  "training_target": "Evidence copied from annotated supporting facts, then gold answer",
+  "benchmark": "Seed 137 random sample of 500 from already completed baseline questions",
+  "metrics": [
+    "exact_match",
+    "token_f1"
+  ],
+  "generation": {
+    "temperature": 0.0,
+    "max_new_tokens": 96
+  },
+  "full_validation_count": 7405,
+  "benchmark_candidate_count": 4385,
+  "model_revision": "87179e5c1f455ef22e6223592d2d61351b525bfc"
+}

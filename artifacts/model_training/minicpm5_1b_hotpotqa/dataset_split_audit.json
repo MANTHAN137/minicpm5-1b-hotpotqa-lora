@@ -1,0 +1,9 @@
+{
+  "training_examples": 5000,
+  "benchmark_examples": 500,
+  "overlapping_question_ids": 0,
+  "overlapping_normalized_question_texts": 0,
+  "training_id_hash_matches_manifest": true,
+  "effective_training_prompts_match_prepared_training_prompts": true,
+  "scope": "Checks leakage in this fine-tuning experiment; cannot establish absence from original model pretraining."
+}

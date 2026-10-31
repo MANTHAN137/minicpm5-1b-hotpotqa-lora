@@ -1,0 +1,15 @@
+{
+  "method": "Paired percentile bootstrap over the 500 fixed evaluation questions",
+  "resamples": 5000,
+  "seed": 137,
+  "confidence_level": 0.95,
+  "exact_match_change_points_interval": [
+    12.6,
+    21.8
+  ],
+  "token_f1_change_points_interval": [
+    17.03474471740651,
+    26.256916675595704
+  ],
+  "scope": "Question resampling only; does not capture training-seed variability, dataset shift or pretraining contamination"
+}

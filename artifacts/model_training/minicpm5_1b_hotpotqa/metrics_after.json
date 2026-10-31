@@ -1,0 +1,35 @@
+{
+  "count": 500,
+  "exact_match": 32.4,
+  "token_f1": 48.56693132961009,
+  "unparsed_answers": 36,
+  "by_type": {
+    "bridge": {
+      "count": 405,
+      "exact_match": 33.82716049382716,
+      "token_f1": 50.59451798379001
+    },
+    "comparison": {
+      "count": 95,
+      "exact_match": 26.31578947368421,
+      "token_f1": 39.923009277579915
+    }
+  },
+  "by_level": {
+    "hard": {
+      "count": 500,
+      "exact_match": 32.4,
+      "token_f1": 48.56693132961009
+    }
+  },
+  "model_id": "openbmb/MiniCPM5-1B",
+  "adapter": "LoRA",
+  "split": "hotpotqa/distractor/validation",
+  "prediction_file": "predictions_after.jsonl",
+  "wall_time_seconds": 374.33,
+  "generation": {
+    "temperature": 0.0,
+    "max_new_tokens": 96,
+    "batch_size": 8
+  }
+}

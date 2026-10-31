@@ -1,0 +1,9 @@
+{
+  "both_correct": 42,
+  "newly_correct": 120,
+  "regressed": 34,
+  "both_incorrect": 304,
+  "before_empty_answers": 1,
+  "after_empty_answers": 18,
+  "remaining_exact_errors": 338
+}

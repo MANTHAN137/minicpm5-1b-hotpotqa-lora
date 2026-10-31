@@ -1,0 +1,9 @@
+# Python 3.12 on Apple Silicon for model training
+mlx==0.32.4
+mlx-lm[train]==0.32.2
+datasets==5.1.0
+transformers==5.22.1
+huggingface-hub==2.4.0
+numpy==2.5.4
+# Only needed to regenerate publication figures
+matplotlib>=3.9,<4

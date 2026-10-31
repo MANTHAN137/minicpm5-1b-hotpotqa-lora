@@ -1,0 +1,36 @@
+{
+  "model_id": "openbmb/MiniCPM5-1B",
+  "training_examples": 5000,
+  "benchmark": "Fixed seeded 500-question HotpotQA distractor validation sample",
+  "examples_scored": 500,
+  "baseline_exact_match": 15.2,
+  "after_exact_match": 32.4,
+  "exact_match_change_points": 17.2,
+  "baseline_token_f1": 26.924976903405504,
+  "after_token_f1": 48.56693132961009,
+  "token_f1_change_points": 21.641954426204588,
+  "by_type": {
+    "bridge": {
+      "count": 405,
+      "exact_match_change_points": 19.50617283950617,
+      "token_f1_change_points": 24.258172076605614
+    },
+    "comparison": {
+      "count": 95,
+      "exact_match_change_points": 7.368421052631579,
+      "token_f1_change_points": 10.488605495547727
+    }
+  },
+  "by_level": {
+    "hard": {
+      "count": 500,
+      "exact_match_change_points": 17.2,
+      "token_f1_change_points": 21.641954426204588
+    }
+  },
+  "limitations": [
+    "HotpotQA is multi-hop Wikipedia QA with supplied evidence context, not closed-book factual recall.",
+    "The local full-precision/HF-derived checkpoint is benchmarked; Loveria's LiteRT export is a separate runtime that still needs native validation.",
+    "The adapter is experimental and trained on CC BY-SA 4.0 data; review attribution and ShareAlike terms before distribution."
+  ]
+}
