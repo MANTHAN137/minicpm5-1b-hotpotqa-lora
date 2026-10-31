@@ -172,6 +172,7 @@ Bridge questions connect facts across passages; comparison questions compare ent
     html = html.replace("Connected · checked ", "Recorded experiment · viewed ")
     html = html.replace("MODEL TRAINING · RESULTS", "RECORDED EXPERIMENT · NOVEMBER 2026")
     html = html.replace('</main>', '<p><a href="'+REPO+'">Source code on GitHub</a> · <a href="'+REPO+'/blob/main/DATA_NOTICE.md">Data attribution and licenses</a></p></main>')
+    html = html.replace("<title>Model training · Live progress</title>", "<title>MiniCPM5-1B · Fine-tuning experiment report</title>")
     (DEST / "index.html").write_text(html)
     shutil.copy2(RUN / "fine-tuning-lesson-preview.html", DEST / "lesson.html")
     (DEST / ".nojekyll").write_text("")
